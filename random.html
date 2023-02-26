@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User API</title>
+    <style>
+        section {
+            text-align: center;
+        }
+        #users {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+        }
+        .info {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 6px;
+            
+        }
+        .info:hover {
+            border: 2px solid blue;
+            
+        }
+        button {
+            background: tomato;
+            padding: 10px;
+            font-weight: 700;
+            color: white;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center; color:blue">Random Users</h1>
+        <div id="users">
+
+        </div>
+        <button onclick="loadusers()">Refresh</button>
+    </section>
+
+    <script src="js/random.js"></script>
+</body>
+</html>
